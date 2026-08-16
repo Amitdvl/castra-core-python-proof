@@ -31,3 +31,11 @@ Before setup, `castra doctor --repo .` exited 1 and named the missing `./.venv/b
 A later session can use only the repository map, Core declaration, product/architecture docs, active-work state, decisions, and this trial. The assets that helped were the concise map, declared native commands, data ownership map, and actionable diagnostics. No generated skill, tool pin, adapter, receipt, scanner, or Git helper was needed; none was created.
 
 This is one bounded Python product proof, not Python or general-distribution support.
+
+## Comparison with the product-only baseline
+
+The product-only baseline had runnable source and tests, but no concise entry point, declared command map, continuity state, or readiness diagnostic for the missing virtual environment. Core added exactly those interfaces. This comparison does not claim a measured time saving or Python support beyond this fixture; it records the concrete rediscovery removed from the trial.
+
+## Independent clean-clone check
+
+A fresh agent in a clean clone at commit `40de35d` used only the repository context. Before setup, `castra doctor --repo .` exited 1 and identified each missing `.venv` command prerequisite. It ran setup, the complete native loop, Core doctor, the `RELEASE_DATA` failure (exit 2), and recovery successfully. It independently identified `data/items.json` and `tests/test_app.py` as the small-change locations. `git status --short`, `git diff --check`, and `git diff --exit-code` were clean afterward.
