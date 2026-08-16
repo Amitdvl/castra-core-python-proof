@@ -1,0 +1,6 @@
+[
+  {"id": "RB-101", "title": "Verify release notes", "state": "open"},
+  {"id": "RB-102", "title": "Prepare migration", "state": "blocked"},
+  {"id": "RB-103", "title": "Publish changelog", "state": "done"},
+  {"id": "RB-104", "title": "Share release calendar", "state": "open"}
+]
