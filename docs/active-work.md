@@ -2,7 +2,7 @@
 
 ## Current
 
-Core v2 proof is complete. The latest focused product changes are the `--open` and `--blocked` views in `release_board/__main__.py`, covered by `tests/test_app.py`.
+Core proof is complete. The latest focused product changes are the `--open` and `--blocked` views in `release_board/__main__.py`, covered by `tests/test_app.py`.
 
 ## Next session
 

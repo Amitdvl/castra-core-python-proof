@@ -1,4 +1,5 @@
 #!/bin/sh
+# Replays the bounded Core proof from the product-only baseline.
 set -eu
 
 proof_repo=${PROOF_REPO:-https://github.com/Amitdvl/castra-core-python-proof.git}

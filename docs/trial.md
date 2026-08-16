@@ -1,8 +1,8 @@
-# Core v2 fresh-agent trial
+# Core fresh-agent trial
 
 ## Scope and provenance
 
-This is a small Python product proof, not Python or `general` distribution support. It was initialized from the inspectable `baseline` branch with Castra commit `551d2b5`, built using `go build -trimpath -o /tmp/castra-core-v2 ./cmd/castra` in the canonical Castra repository. That binary reported `castra dev`.
+This is a small Python product proof, not Python or `general` distribution support. It was initialized from the inspectable `baseline` branch with Castra commit `551d2b5`, built using `go build -trimpath -o /tmp/castra-core ./cmd/castra` in the canonical Castra repository. That binary reported `castra dev`.
 
 Core generated only `AGENTS.md`, `.castra/core.yaml`, and the three continuity files. It did not create Git state, install a tool, alter product source, or run a project command during initialization.
 
@@ -24,4 +24,4 @@ On a clean clone without `.venv`, `castra doctor --repo .` reports each unavaila
 
 The independent later session resumed from `docs/active-work.md`, `docs/decisions.md`, and `docs/improvements.md`, then recorded the narrow status-view decision with its change. The useful assets were the concise map, literal command list, source ownership map, continuity files, and native failure output. No skill, tool pin, adapter, receipt, scanner, or Git helper helped, so none exists.
 
-The `baseline` branch has the same runnable product but lacks all Core files. It is an inspectable comparison: Core removes command/context rediscovery without claiming measured time savings or broad Python support. `scripts/replay-core-v2.sh` rebuilds the named Castra revision, clean-clones `baseline`, initializes Core, and repeats the loop and failure recovery.
+The `baseline` branch has the same runnable product but lacks all Core files. It is an inspectable comparison: Core removes command/context rediscovery without claiming measured time savings or broad Python support. `scripts/replay-core.sh` rebuilds the named Castra revision, clean-clones `baseline`, initializes Core, and repeats the loop and failure recovery.
