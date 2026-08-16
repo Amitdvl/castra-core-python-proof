@@ -10,7 +10,7 @@ Core generated only `AGENTS.md`, `.castra/core.yaml`, and the three continuity f
 
 A fresh agent needs only the repository. `AGENTS.md` states the purpose and exact native commands, then routes to `docs/product.md`, `docs/architecture.md`, and the command declaration. Those documents identify `release_board/__main__.py`, `tests/test_app.py`, and `data/items.json` as the smallest relevant surfaces.
 
-The agent added the `--open` view in `release_board/__main__.py` and its focused test in `tests/test_app.py`. It observed `Verify release notes (RB-101)` and `Share release calendar (RB-104)` from the new command, while excluding blocked and completed work. In this generated fixture, `castra exercise --repo . validate` passed all four tests; `castra exercise --repo . inspect` exposed the same queue as JSON. The replay intentionally begins from the pre-change product baseline, where its three original tests pass before an agent applies the documented change.
+The initial agent added the `--open` view in `release_board/__main__.py` and its focused test in `tests/test_app.py`. An independent fresh session later added `--blocked`, again finding the same source and test locations from repository context alone. It observed `Prepare migration (RB-102)` while excluding open and completed work. In this generated fixture, `castra exercise --repo . validate` passed all five tests; `castra exercise --repo . inspect` exposed the same queue as JSON. The replay intentionally begins from the pre-change product baseline, where its three original tests pass before an agent applies either documented change.
 
 ## Executable loop and ordinary failure
 
@@ -22,6 +22,6 @@ On a clean clone without `.venv`, `castra doctor --repo .` reports each unavaila
 
 ## Continuity, comparison, and evidence
 
-The next fresh session finds active work, durable decisions, and repeated-friction improvements at the paths in `.castra/core.yaml`. The useful assets were the concise map, literal command list, source ownership map, continuity files, and native failure output. No skill, tool pin, adapter, receipt, scanner, or Git helper helped, so none exists.
+The independent later session resumed from `docs/active-work.md`, `docs/decisions.md`, and `docs/improvements.md`, then recorded the narrow status-view decision with its change. The useful assets were the concise map, literal command list, source ownership map, continuity files, and native failure output. No skill, tool pin, adapter, receipt, scanner, or Git helper helped, so none exists.
 
 The `baseline` branch has the same runnable product but lacks all Core files. It is an inspectable comparison: Core removes command/context rediscovery without claiming measured time savings or broad Python support. `scripts/replay-core-v2.sh` rebuilds the named Castra revision, clean-clones `baseline`, initializes Core, and repeats the loop and failure recovery.

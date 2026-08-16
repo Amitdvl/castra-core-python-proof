@@ -25,6 +25,13 @@ class ReleaseBoardTests(unittest.TestCase):
         self.assertNotIn("Prepare migration", result.stdout)
         self.assertNotIn("Publish changelog", result.stdout)
 
+    def test_blocked_view_excludes_open_and_done_items(self):
+        result = self.run_board("--blocked")
+        self.assertEqual(result.returncode, 0)
+        self.assertIn("Prepare migration (RB-102)", result.stdout)
+        self.assertNotIn("Verify release notes", result.stdout)
+        self.assertNotIn("Publish changelog", result.stdout)
+
     def test_missing_data_is_actionable(self):
         result = self.run_board("--doctor", RELEASE_DATA="missing-items.json")
         self.assertEqual(result.returncode, 2)
