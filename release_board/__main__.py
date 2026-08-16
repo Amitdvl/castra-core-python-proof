@@ -26,11 +26,16 @@ def main(argv):
     if argv == ["--json"]:
         print(json.dumps(items, indent=2))
         return 0
+    if argv == ["--open"]:
+        for item in items:
+            if item["state"] == "open":
+                print(f"{item['title']} ({item['id']})")
+        return 0
     if argv == ["--doctor"]:
         print(f"Ready: {len(items)} valid work items at {path}.")
         return 0
     if argv:
-        print("Usage: python -m release_board [--json|--doctor]", file=sys.stderr)
+        print("Usage: python -m release_board [--json|--open|--doctor]", file=sys.stderr)
         return 64
     for item in items:
         marker = "! " if item["state"] == "blocked" else ""
