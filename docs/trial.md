@@ -10,7 +10,7 @@ Core generated only `AGENTS.md`, `.castra/core.yaml`, and the three continuity f
 
 A fresh agent needs only the repository. `AGENTS.md` states the purpose and exact native commands, then routes to `docs/product.md`, `docs/architecture.md`, and the command declaration. Those documents identify `release_board/__main__.py`, `tests/test_app.py`, and `data/items.json` as the smallest relevant surfaces.
 
-The agent added the `--open` view in `release_board/__main__.py` and its focused test in `tests/test_app.py`. It observed `Verify release notes (RB-101)` and `Share release calendar (RB-104)` from the new command, while excluding blocked and completed work. `castra exercise --repo . validate` then passed all four tests; `castra exercise --repo . inspect` exposed the same queue as JSON.
+The agent added the `--open` view in `release_board/__main__.py` and its focused test in `tests/test_app.py`. It observed `Verify release notes (RB-101)` and `Share release calendar (RB-104)` from the new command, while excluding blocked and completed work. In this generated fixture, `castra exercise --repo . validate` passed all four tests; `castra exercise --repo . inspect` exposed the same queue as JSON. The replay intentionally begins from the pre-change product baseline, where its three original tests pass before an agent applies the documented change.
 
 ## Executable loop and ordinary failure
 
