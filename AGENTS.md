@@ -9,6 +9,7 @@ Start with the product overview and architecture below. Use the declared native 
 
 - Product: docs/product.md
 - Architecture: docs/architecture.md
+- Full project-owned declaration: .castra/core.yaml
 - Setup: python3 -m venv .venv
 - Run: ./.venv/bin/python -m release_board
 - Validate: ./.venv/bin/python -m unittest discover -s tests -v
@@ -18,5 +19,5 @@ Start with the product overview and architecture below. Use the declared native 
 - Exercise one trusted native command: castra exercise --repo . validate.
 - Continuity: docs/active-work.md, docs/decisions.md, docs/improvements.md
 
-Read a nearer AGENTS.md only when changing that area. Record recurring friction in the improvements file.
+When changing an area, read its nearer AGENTS.md and any relevant .agents/skills/ entry only if they exist. Record recurring friction in the improvements file.
 <!-- castra-core:end -->

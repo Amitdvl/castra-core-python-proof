@@ -2,7 +2,7 @@
 
 ## Scope and provenance
 
-This is a small Python product proof, not Python or `general` distribution support. It was initialized from the inspectable `baseline` branch with Castra commit `573dbe87c2342e8d5f961cee44d4592719981c9e`, built using `go build -trimpath -o /tmp/castra-core-v2 ./cmd/castra` in the canonical Castra repository. That binary reported `castra dev`.
+This is a small Python product proof, not Python or `general` distribution support. It was initialized from the inspectable `baseline` branch with Castra commit `551d2b5`, built using `go build -trimpath -o /tmp/castra-core-v2 ./cmd/castra` in the canonical Castra repository. That binary reported `castra dev`.
 
 Core generated only `AGENTS.md`, `.castra/core.yaml`, and the three continuity files. It did not create Git state, install a tool, alter product source, or run a project command during initialization.
 

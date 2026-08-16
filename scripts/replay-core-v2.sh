@@ -3,7 +3,7 @@ set -eu
 
 proof_repo=${PROOF_REPO:-https://github.com/Amitdvl/castra-core-python-proof.git}
 castra_repo=${CASTRA_REPO:-https://github.com/Amitdvl/castra.git}
-castra_revision=${CASTRA_REVISION:-573dbe87c2342e8d5f961cee44d4592719981c9e}
+castra_revision=${CASTRA_REVISION:-551d2b5}
 work=$(mktemp -d)
 trap 'rm -rf "$work"' EXIT HUP INT TERM
 
